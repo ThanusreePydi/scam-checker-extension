@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Scam Checker</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="app">
+    <h1>Scam Checker</h1>
+
+    <label for="userInput">Paste a link, phone number, email, or message</label>
+    <textarea id="userInput" placeholder="Paste suspicious content here"></textarea>
+
+    <button id="checkButton">Check</button>
+
+    <section id="result" class="result hidden">
+      <h2 id="riskTitle"></h2>
+      <p id="riskPercent"></p>
+      <p id="confidencePercent"></p>
+      <ul id="reasonList"></ul>
+    </section>
+
+    <p class="note">This is a risk estimate, not a guarantee.</p>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>

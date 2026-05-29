@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Scam Checker",
+  "version": "1.0.0",
+  "description": "Checks links, phone numbers, emails, and messages for scam risk.",
+  "icons": {
+  "16": "icon128.png",
+  "32": "icon128.png",
+  "48": "icon128.png",
+  "128": "icon128.png"
+},
+  "action": {
+  "default_popup": "popup.html",
+  "default_title": "Scam Checker",
+  "default_icon": {
+    "16": "icon128.png",
+    "32": "icon128.png",
+    "48": "icon128.png",
+    "128": "icon128.png"
+  }
+},
+  "permissions": [
+    "contextMenus",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
